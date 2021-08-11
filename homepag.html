@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="stylehomepage.css" />
+
+    <title>CimaHI | Home Page</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="CimaHI" width="100px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#information">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+      <div class="container">
+        <h1>
+          Selamat Datang di CimaHI
+          <h1 style="color: rgb(88, 184, 24)">Health Information</h1>
+        </h1>
+        <p>Klik mulai untuk mendapatkan sebuah informasi yang dibutuhkan di masa pandemi pada saat ini!</p>
+        <a href="#information"><button type="submit" class="btn btn-primary">Mulai!</button></a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L34.3,181.3C68.6,203,137,245,206,261.3C274.3,277,343,267,411,234.7C480,203,549,149,617,112C685.7,75,754,53,823,69.3C891.4,85,960,139,1029,181.3C1097.1,224,1166,256,1234,240C1302.9,224,1371,160,1406,128L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Deskripsi</h2>
+            <p>
+              Website CimaHi adalah sebuah website yang memuat tentang berbagai informasi agar dapat dibaca dan dilihat oleh pengguna internet melalui sebuah mesin pencari. Informasi yang dapat dimuat dalam sebuah website umumnya berisi
+              mengenai konten gambar, ilustrasi, video, dan teks untuk berbagai macam kepentingan. Website CimaHi ini akan menampilkan sebuah informasi kesehatan yang ada dilingkup sekitar daerah Cimahi seperti informasi mengenai covid-19
+              seperti cara mecegah covid-19,ciri-ciri terdampak covid-19,data yang terpapar covid-19,cara hidup sehat di era pandemi,dan hal mengenai kesehatan lainnya.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h2 class="text-end">Tujuan</h2>
+            <p class="text-end">
+              Tujuan website cimaHi adalah untuk mewujudkan sistem jaringan informasi yang terpadu bagi masyarakat sekitar cimahi maupun di luar cimahi dengan aplikasi berbasis teknologi informasi internet, website ini akan menampilkan
+              sebagian informasi kesehatan khususnya daerah cimahi, dalam menjalankan fungsinya untuk kesejahteraan masyarakat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir about -->
+
+    <!-- awal Data Statistik -->
+    <section id="Counter">
+      <h2 class="text-center">Data Kasus Covid-19 Kota Cimahi</h2>
+      <div class="counter-up bg-primary">
+        <div class="content">
+          <div class="box" style="background-color: rgb(88, 184, 24)">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <div class="counter">5056</div>
+            <div class="text">Jumlah Kasus</div>
+          </div>
+          <div class="box" style="background-color: rgb(88, 184, 24)">
+            <div class="icon"><i class="fas fa-ambulance"></i></div>
+            <div class="counter">329</div>
+            <div class="text">Konfirmasi Aktif</div>
+          </div>
+          <div class="box" style="background-color: rgb(88, 184, 24)">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="counter">4611</div>
+            <div class="text">Sembuh</div>
+          </div>
+          <div class="box" style="background-color: rgb(88, 184, 24)">
+            <div class="icon"><i class="fas fa-user-times"></i></div>
+            <div class="counter">116</div>
+            <div class="text">Meninggal</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Script -->
+      <script>
+        $(document).ready(function () {
+          $(".counter").counterUp({
+            delay: 5,
+            time: 120,
+          });
+        });
+      </script>
+      <!-- Akhir Script -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,256L26.7,234.7C53.3,213,107,171,160,138.7C213.3,107,267,85,320,80C373.3,75,427,85,480,122.7C533.3,160,587,224,640,250.7C693.3,277,747,267,800,245.3C853.3,224,907,192,960,165.3C1013.3,139,1067,117,1120,112C1173.3,107,1227,117,1280,138.7C1333.3,160,1387,192,1413,208L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Data Statistik -->
+
+    <!-- Information -->
+    <section id="information" style="background-color: #e2edff">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Pilih Informasi</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/covidreb.jpg" class="card-img-top" alt="Informasi Covid-19" />
+              <div class="card-body btn btn-primary">
+                <a href="penjelasan covid.html"><h3 class="card-text text-white">Penjelasan Covid-19</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/gejala.jpg" class="card-img-top" alt="informasi Gejala" />
+              <div class="card-body btn btn-primary">
+                <a href="page_gejala.html"><h3 class="card-text text-white">Gejala Covid-19</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/pencegahanreborn.jpg" class="card-img-top" alt="informasi pencegahan" />
+              <div class="card-body btn btn-primary">
+                <a href="page_pencegahan.html"><h3 class="card-text text-white">Pencegahan Covid-19</h3></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/hidup sehat.jpg" class="card-img-top" alt="informasi hidup sehat" />
+              <div class="card-body btn btn-primary">
+                <a href="Cara Hidup Sehat.html"><h3 class="card-text text-white">Cara Hidup Sehat</h3></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/statistik.jpg" class="card-img-top" alt="informasi Data statistik" />
+              <div class="card-body btn btn-primary">
+                <a href="#Counter"><h3 class="card-text text-white">Data Kasus</h3></a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/vaksinreborn.jpg" class="card-img-top" alt="informasi Vaksin Covid-19" />
+              <div class="card-body btn btn-primary">
+                <a href="page_Vaksin.html"><h3 class="card-text text-white">Vaksin Covid-19</h3></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#e2edff"
+        fill-opacity="1"
+        d="M0,96L26.7,106.7C53.3,117,107,139,160,165.3C213.3,192,267,224,320,218.7C373.3,213,427,171,480,128C533.3,85,587,43,640,64C693.3,85,747,171,800,176C853.3,181,907,107,960,112C1013.3,117,1067,203,1120,218.7C1173.3,235,1227,181,1280,144C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Akhir Informasi -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Hubungi Kami</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="Name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,192L26.7,181.3C53.3,171,107,149,160,165.3C213.3,181,267,235,320,256C373.3,277,427,267,480,218.7C533.3,171,587,85,640,74.7C693.3,64,747,128,800,160C853.3,192,907,192,960,208C1013.3,224,1067,256,1120,256C1173.3,256,1227,224,1280,202.7C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-3">
+      <p>Created with Bootstrap 5 by <a href="#" class="text-white fw-bold">Kelompok 4</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
